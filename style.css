@@ -1,0 +1,76 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: rgb(24, 23, 23);
+  display: flex;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 120px;
+  border: 1px solid rgb(255, 255, 255);
+  top: 50%;
+  left: 40%;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 1.2s;
+}
+
+.button:hover {
+  font-size: 20px;
+  height: 50px;
+  width: 130px;
+  border-radius: 28px;
+  border: 1px solid rgb(0, 221, 255);
+  box-shadow: 10px 10px 30px rgb(0, 221, 255);
+}
+
+.text {
+  animation: background-pan 3s linear infinite;
+  background-size: 200%;
+  height: 40px;
+  top: 50%;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 107, 128),
+    rgb(130, 161, 238),
+    rgb(192, 253, 255),
+    rgb(0, 107, 128)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes rotate_loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+#loading-image{
+    margin-top: 5px;
+    animation: rotate_loading 3s infinite;
+    display: none;
+    height: 30px;
+}
