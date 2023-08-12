@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>loading button animation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="button" onclick="clicked()">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="button" onclick="clicked()">
         <div class="text" id="t1"><h2>submit</h2></div>
-        <img id="loading-image" src="loading.png">
+        <div class="text" id="t2"><h2>submited</h2></div>
+        <img id="loading-image" src="loading.png" />
+      </div>
+      <div class="progress_bar" id="progress_bar">
+          <div class="progress" id="progress"></div>
+        </div>
+        <!-- <div class="R1" id="R1">1. Ashraf</div>
+        <div class="R2" id="R2">2. Karan</div>
+        <div class="R3" id="R3">3. Pratyaksh</div>
+        <div class="R4" id="R4">4. Rheetik</div>
+        <div class="R5" id="R5">5. Yash</div> -->
+
+        <ul class="name" id="name">
+          <li class="R1" id="R1">Ashraf</li>
+          <li class="R2" id="R2">Karan</li>
+          <li class="R3" id="R3">Pratyaksh</li>
+          <li class="R4" id="R4">Rheetik</li>
+          <li class="R5" id="R5">Yash</li>
+        </ul>
     </div>
-    <script  src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
